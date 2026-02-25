@@ -1,0 +1,14 @@
+[
+  {
+    "id": "45c5170b-7719-4835-911d-e1439826048b",
+    "businessName": "Acme Co",
+    "contactName": "Alex",
+    "email": "alex@example.com",
+    "phone": "123",
+    "demoDateTime": "2030-01-01T09:00:00.000Z",
+    "createdAt": "2026-02-25T21:24:22.968Z",
+    "confirmationSentAt": "2026-02-25T21:24:22.992Z",
+    "reminderSentAt": null,
+    "calendarEventLink": null
+  }
+]

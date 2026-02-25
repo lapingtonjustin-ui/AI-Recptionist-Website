@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book Demo | AI Receptionist Pro</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav">
+        <a class="brand" href="/">AI Receptionist Pro</a>
+        <nav>
+          <a href="/features.html">Features</a>
+          <a href="/pricing.html">Pricing</a>
+          <a class="btn btn-ghost active" href="/book-demo.html">Book Demo</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container page">
+      <h1>Book your live demo</h1>
+      <p class="helper">Choose a date first to load open times from your Google Calendar.</p>
+
+      <form id="demo-form" class="panel form-grid">
+        <label>Business Name <input name="businessName" required /></label>
+        <label>Your Name <input name="contactName" required /></label>
+        <label>Email <input type="email" name="email" required /></label>
+        <label>Phone <input name="phone" /></label>
+
+        <label>Date <input type="date" id="date-input" required /></label>
+
+        <label>
+          Available Time Slots
+          <select id="slot-select" required>
+            <option value="">Select a date first</option>
+          </select>
+        </label>
+
+        <button class="btn" type="submit">Confirm Demo Booking</button>
+        <p id="status" class="helper"></p>
+      </form>
+    </main>
+
+    <footer class="footer"><div class="container"><p>© <span id="year"></span> AI Receptionist Pro</p></div></footer>
+    <script src="main.js"></script>
+    <script src="book.js"></script>
+  </body>
+</html>
