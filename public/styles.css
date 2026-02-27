@@ -77,3 +77,23 @@ input, select {
 @media (max-width: 900px) {
   .hero { grid-template-columns: 1fr; }
 }
+
+.gold-banner {
+  margin-bottom: 1rem;
+  background: linear-gradient(120deg, #7a5a12 0%, #b7891f 38%, #f0cf6a 100%);
+  color: #1b1405;
+  border: 1px solid #d7b04a;
+}
+
+.gold-banner h1,
+.gold-banner p {
+  color: #1b1405;
+}
+
+.gold-eyebrow {
+  color: #3a2b08;
+}
+
+.about-block h2 {
+  margin-top: 0;
+}
