@@ -1,6 +1,6 @@
-# AI Receptionist Pro Website
+# Titanium AI Services Website
 
-A full multi-page website for your AI receptionist offer, including:
+A full multi-page website for Titanium AI Services offer, including:
 - Professional homepage, features, pricing, and booking pages.
 - Live availability picker from Google Calendar.
 - Demo booking flow with automatic confirmation email.

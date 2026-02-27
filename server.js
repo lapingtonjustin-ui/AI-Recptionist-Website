@@ -102,11 +102,11 @@ function isValidEmail(email) {
 function buildConfirmationTemplate(booking) {
   const demoDate = new Date(booking.demoDateTime).toLocaleString();
   return `
-    <h2>Your AI Receptionist demo is confirmed 🎉</h2>
+    <h2>Your Titanium AI Services demo is confirmed 🎉</h2>
     <p>Hi ${booking.contactName},</p>
     <p>You're booked for <strong>${demoDate}</strong>.</p>
     <p><strong>Business:</strong> ${booking.businessName}</p>
-    <p>You'll see exactly how your AI receptionist can handle calls 24/7 for $497/month.</p>
+    <p>You'll see exactly how Titanium AI Services can handle calls 24/7 for $497/month.</p>
   `;
 }
 
@@ -127,7 +127,7 @@ async function sendEmail({ to, subject, html }) {
   }
 
   await transporter.sendMail({
-    from: `AI Receptionist Pro <${fromEmail}>`,
+    from: `Titanium AI Services <${fromEmail}>`,
     to,
     subject,
     html,
@@ -211,7 +211,7 @@ async function createCalendarEvent(booking) {
     sendUpdates: 'all',
     requestBody: {
       summary: `Demo: ${booking.businessName}`,
-      description: `AI Receptionist demo booked by ${booking.contactName} (${booking.email}).`,
+      description: `Titanium AI Services demo booked by ${booking.contactName} (${booking.email}).`,
       start: { dateTime: start.toISOString() },
       end: { dateTime: end.toISOString() },
       attendees: [{ email: booking.email }],
@@ -295,7 +295,7 @@ app.post('/api/book-demo', async (req, res) => {
 
     await sendEmail({
       to: email,
-      subject: 'Demo confirmed: AI Receptionist Pro',
+      subject: 'Demo confirmed: Titanium AI Services',
       html: buildConfirmationTemplate(newBooking),
     });
 
@@ -376,7 +376,7 @@ setInterval(() => {
 }, 60 * 1000);
 
 app.listen(PORT, () => {
-  console.log(`AI Receptionist website running at http://localhost:${PORT}`);
+  console.log(`Titanium AI Services website running at http://localhost:${PORT}`);
   if (!calendarClient) {
     console.log('Google Calendar is not connected yet. Set Google env vars to enable live availability.');
   }
